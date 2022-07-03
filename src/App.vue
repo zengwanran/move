@@ -1,32 +1,38 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <!-- <p style="text-align: center;">头部</p>
+    <van-grid>
+      <van-grid-item icon="photo-o" text="文字" />
+      <van-grid-item icon="photo-o" text="文字" />
+      <van-grid-item icon="photo-o" text="文字" />
+      <van-grid-item icon="photo-o" text="文字" />
+    </van-grid>
+    <p style="text-align: center;">金刚区</p>
+    <van-grid :gutter="10">
+      <van-grid-item v-for="i in list" :key="i.title" :icon="i.icon" :text="i.title" />
+    </van-grid> -->
+
+    <router-view></router-view>
   </div>
 </template>
-
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+export default {
+  data() {
+    return {
+      // list: [
+      //   { icon: 'like-o', title: '爱心' },
+      //   { icon: 'star-o', title: '星星' },
+      //   { icon: 'phone-o', title: '手机' },
+      //   { icon: 'fire-o', title: '火狐' },
+      //   { icon: 'coupon-o', title: '文件' },
+      //   { icon: 'cart-o', title: '推车' },
+      //   { icon: 'gem-o', title: '钻石' },
+      //   { icon: 'bag-o', title: '小包' },
+      //   { icon: 'apps-o', title: '更多' },
+      // ]
     }
-  }
+  },
 }
+</script>
+<style>
 </style>
